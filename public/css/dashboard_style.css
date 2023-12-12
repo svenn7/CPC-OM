@@ -1,0 +1,180 @@
+body{
+    background: #eee;
+}
+
+.fixed-start {
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.nav-item{
+    margin-right: 10px;
+}
+
+.custom-dropdown-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+#side_nav{
+background: #262931;
+min-width: 250px;
+max-width: 250px;
+transition: all 0.3s;
+}
+
+.content{
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 250px;
+}
+
+.card {
+    min-width: 0;
+}
+
+.content-wrapper{
+    padding: 15px;
+}
+
+hr.h-color{
+    background: #eee;
+}
+
+.sidebar li:hover {
+    background: #292c33;
+    border-radius: 8px;
+}
+
+.sidebar li.active{
+    background: #1d1d1f;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+color: #eee;
+}
+
+.sidebar li a{
+color: #eee;
+}
+
+/* Logo */
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.logo img,
+.logo-toggle img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+/* Action Buttom */
+.action-button {
+    font-size: .8rem;
+    height: 30px;
+    width: 100px;
+}
+
+.action-button i {
+    padding-right: 5px;
+}
+
+#approveAllBtn i,
+#cancelAllBtn i {
+    padding-right: 5px;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #141418;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1c2e4a;
+}
+
+@media(max-width: 767px) {
+    #side_nav {
+        margin-left: -250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        z-index: 1;
+        transition: margin-left 0.3s ease;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .content-wrapper{
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .custom-dropdown-menu {
+        position: static;
+        transform: none;
+        width: auto;
+    }
+
+    #side_nav.active{
+        margin-left: 0;
+    }
+
+    .fix {
+        width: 0;
+    }
+
+    .action-button {
+        height: 30px;
+        width: 40px;
+    }
+}
+
+/* Table */
+#myDataTable_filter {
+    margin-bottom: 20px;
+}
+
+#myDataTable_filter label {
+    display: flex;
+    align-items: center;
+    color: none;
+}
+
+#myDataTable_filter label input {
+    margin-left: 10px;
+    color: none;
+}
+
+#myInactiveDataTable_filter {
+    margin-bottom: 20px;
+}
+
+#myInactiveDataTable_filter label {
+    display: flex;
+    align-items: center;
+    color: none;
+}
+
+#myInactiveDataTable_filter label input {
+    margin-left: 10px;
+    color: none;
+}
